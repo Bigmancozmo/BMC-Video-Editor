@@ -20,5 +20,11 @@ int main() {
 		return -1;
 	}
 
+	while (!windowManager.ShouldClose()) {
+		windowManager.Update();
+	}
+
+	windowManager.~WindowManager();
+
 	return 0;
 }

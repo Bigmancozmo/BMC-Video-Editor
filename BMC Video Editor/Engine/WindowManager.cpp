@@ -29,9 +29,10 @@ bool WindowManager::OpenWindow(int width, int height, const char* title)
 
 	window = glfwCreateWindow(width, height, title, NULL, NULL);
 
-	int x = (vidmode->width / 2) + (width / 2);
-	int y = (vidmode->height / 2) + (height / 2);
+	int x = (vidmode->width / 2) - (width / 2);
+	int y = (vidmode->height / 2) - (height / 2);
 	glfwSetWindowPos(window, x, y);
+	glfwShowWindow(window);
 
 	return true;
 }
