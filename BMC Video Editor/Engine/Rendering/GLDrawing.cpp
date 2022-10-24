@@ -4,7 +4,7 @@ GLDrawing::GLDrawing()
 {
 }
 
-void GLDrawing::SetBackgroundColor(int R, int G, int B)
+void GLDrawing::SetBackgroundColor(double R, double G, double B)
 {
-	glClearColor(R/255,G/255,B/255,1.0f);
+	glClearColor(R/255.0f,G/255.0f,B/255.0f,1.0f);
 }

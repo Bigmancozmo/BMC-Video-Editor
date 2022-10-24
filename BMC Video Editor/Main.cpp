@@ -1,17 +1,11 @@
 #include "Main.h"
 
 int main() {
-	// Debug/Release Mode Setup
+	// Enable certain features if in debug mode.
 	bool DEBUG_MODE = false;
 #if defined _DEBUG
 	DEBUG_MODE = true;
 #endif
-
-	if (DEBUG_MODE) {
-		cout << "In Debug Mode" << endl;
-	} else {
-		FreeConsole();
-	}
 
 	// Open Window
 	WindowManager windowManager = WindowManager();
@@ -23,7 +17,7 @@ int main() {
 
 	// Refresh Window
 	while (!windowManager.ShouldClose()) {
-		renderer.SetBackgroundColor(255, 0, 0);
+		renderer.SetBackgroundColor(200, 200, 200);
 		windowManager.Render();
 		windowManager.Update();
 	}

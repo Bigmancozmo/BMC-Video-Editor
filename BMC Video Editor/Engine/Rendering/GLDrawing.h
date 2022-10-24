@@ -5,6 +5,6 @@ class GLDrawing
 {
 public:
 	GLDrawing();
-	void SetBackgroundColor(int R, int G, int B);
+	void SetBackgroundColor(double R, double G, double B);
 };
 
