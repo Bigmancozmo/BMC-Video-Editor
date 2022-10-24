@@ -33,7 +33,8 @@ bool WindowManager::OpenWindow(int width, int height, const char* title)
 	int y = (vidmode->height / 2) - (height / 2);
 	glfwSetWindowPos(window, x, y);
 	glfwShowWindow(window);
-
+	
+	glfwMakeContextCurrent(window);
 	gladLoadGL();
 	glViewport(0, 0, width, height);
 
