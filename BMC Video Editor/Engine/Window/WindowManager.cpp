@@ -34,6 +34,9 @@ bool WindowManager::OpenWindow(int width, int height, const char* title)
 	glfwSetWindowPos(window, x, y);
 	glfwShowWindow(window);
 
+	gladLoadGL();
+	glViewport(0, 0, width, height);
+
 	return true;
 }
 
