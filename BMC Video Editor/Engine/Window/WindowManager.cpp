@@ -34,9 +34,9 @@ bool WindowManager::OpenWindow(int width, int height, const char* title)
 	glfwSetWindowPos(window, x, y);
 	glfwShowWindow(window);
 	
-	glfwMakeContextCurrent(window);
-	gladLoadGL();
-	glViewport(0, 0, width, height);
+	OpenGLLoader glloader = OpenGLLoader(window);
+	glloader.LoadOpenGL();
+	glloader.SetViewportSize(width, height);
 
 	return true;
 }
