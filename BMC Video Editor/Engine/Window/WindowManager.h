@@ -12,9 +12,9 @@ public:
 	const GLFWvidmode* GetVidMode();
 	GLFWmonitor* GetMonitor();
 	void Update();
+	void Render();
 private:
 	GLFWwindow* window;
 	const GLFWvidmode* vidmode;
 	GLFWmonitor* monitor;
 };
-

@@ -66,3 +66,8 @@ void WindowManager::Update()
 	glfwPollEvents();
 	glfwSwapBuffers(window);
 }
+
+void WindowManager::Render()
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+}
