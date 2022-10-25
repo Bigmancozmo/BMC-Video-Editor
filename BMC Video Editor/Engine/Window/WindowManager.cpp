@@ -1,5 +1,10 @@
 #include "WindowManager.h"
 
+void window_size_callback(GLFWwindow* window, int width, int height)
+{
+	glViewport(0, 0, width, height);
+}
+
 WindowManager::WindowManager()
 {
 	monitor = NULL;
@@ -35,6 +40,9 @@ bool WindowManager::OpenWindow(int width, int height, const char* title)
 	glfwSetWindowPos(window, x, y);
 	glfwShowWindow(window);
 	
+	WindowCallbacks callbackManager = WindowCallbacks();
+	callbackManager.SetSizeCallback(window, window_size_callback);
+
 	OpenGLLoader glloader = OpenGLLoader(window);
 	glloader.LoadOpenGL();
 	glloader.SetViewportSize(width, height);
