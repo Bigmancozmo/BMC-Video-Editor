@@ -18,13 +18,10 @@
     <ClInclude Include="Main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\RenderModules.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Window\WindowManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\FullEngine.h">
+    <ClInclude Include="Engine\Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Window\WindowCallbacks.h">
@@ -56,5 +53,9 @@
     <ClCompile Include="Engine\Rendering\GLDrawing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine\Shaders\VertexShader.glsl" />
+    <None Include="Engine\Shaders\FragmentShader.glsl" />
   </ItemGroup>
 </Project>
