@@ -155,18 +155,24 @@
   <ItemGroup>
     <ClInclude Include="Engine\Engine.h" />
     <ClInclude Include="Engine\Rendering\GLDrawing.h" />
+    <ClInclude Include="Engine\Files\FileManager.h" />
+    <ClInclude Include="Engine\Input\KeyboardInput.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Engine\Window\WindowManager.h" />
     <ClInclude Include="Engine\Window\WindowCallbacks.h" />
     <ClInclude Include="Engine\Rendering\Loader\OpenGLLoader.h" />
+    <ClInclude Include="Engine\Unorganized\Math.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\glad.c" />
     <ClCompile Include="Engine\Rendering\GLDrawing.cpp" />
+    <ClCompile Include="Engine\Files\FileManager.cpp" />
+    <ClCompile Include="Engine\Input\KeyboardInput.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Engine\Window\WindowManager.cpp" />
     <ClCompile Include="Engine\Window\WindowCallbacks.cpp" />
     <ClCompile Include="Engine\Rendering\Loader\OpenGLLoader.cpp" />
+    <ClCompile Include="Engine\Unorganized\Math.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Shaders\VertexShader.glsl" />
