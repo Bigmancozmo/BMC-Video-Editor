@@ -2,7 +2,7 @@
 
 int main() {
 	glfwInit();
-	WindowManager windowManager = WindowManager(800, 600, "hi hi hi hi hi hi hi hi hi hi");
+	WindowManager windowManager = WindowManager(800, 600, "BMC Video Editor");
 	while (!windowManager.ShouldClose()) {
 		windowManager.Update();
 	}
